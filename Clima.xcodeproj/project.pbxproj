@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7065BB032B1280A00018E528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065BB022B1280A00018E528 /* AppDelegate.swift */; };
 		7065BB052B1280A00018E528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065BB042B1280A00018E528 /* SceneDelegate.swift */; };
-		7065BB072B1280A00018E528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065BB062B1280A00018E528 /* ViewController.swift */; };
+		7065BB072B1280A00018E528 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065BB062B1280A00018E528 /* WeatherViewController.swift */; };
 		7065BB0A2B1280A00018E528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065BB082B1280A00018E528 /* Main.storyboard */; };
 		7065BB0C2B1280C50018E528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7065BB0B2B1280C50018E528 /* Assets.xcassets */; };
 		7065BB0F2B1280C50018E528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7065BB0D2B1280C50018E528 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		7065BAFF2B1280A00018E528 /* Clima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7065BB022B1280A00018E528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7065BB042B1280A00018E528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7065BB062B1280A00018E528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7065BB062B1280A00018E528 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		7065BB092B1280A00018E528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7065BB0B2B1280C50018E528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7065BB0E2B1280C50018E528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7034FCB62B15DB0A0059E5C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7065BB062B1280A00018E528 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7034FCB72B15DB1A0059E5C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7065BB082B1280A00018E528 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7034FCB82B15DB2F0059E5C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7065BAF62B1280A00018E528 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +81,9 @@
 			children = (
 				7065BB022B1280A00018E528 /* AppDelegate.swift */,
 				7065BB042B1280A00018E528 /* SceneDelegate.swift */,
-				7065BB062B1280A00018E528 /* ViewController.swift */,
-				7065BB082B1280A00018E528 /* Main.storyboard */,
+				7034FCB82B15DB2F0059E5C9 /* Model */,
+				7034FCB72B15DB1A0059E5C9 /* View */,
+				7034FCB62B15DB0A0059E5C9 /* Controller */,
 				7065BB0B2B1280C50018E528 /* Assets.xcassets */,
 				7065BB0D2B1280C50018E528 /* LaunchScreen.storyboard */,
 				7065BB102B1280C50018E528 /* Info.plist */,
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7065BB072B1280A00018E528 /* ViewController.swift in Sources */,
+				7065BB072B1280A00018E528 /* WeatherViewController.swift in Sources */,
 				7065BB032B1280A00018E528 /* AppDelegate.swift in Sources */,
 				7065BB052B1280A00018E528 /* SceneDelegate.swift in Sources */,
 			);
